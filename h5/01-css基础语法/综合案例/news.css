@@ -1,0 +1,39 @@
+body {
+    font:16px/28px 'Microsoft Sans Serif'
+}
+h1 {
+    /*文字不加粗*/
+    font-weight: 400;
+    /*文字水平居中*/
+    text-align: center;
+}
+.gray {
+    color:#888888;
+    font-size: 12px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+.search {
+    color: #666666;
+    width: 170px;
+}
+.btn {
+    font-weight: 700;
+}
+
+p {
+    /*首行缩进 2 个字符*/
+    text-indent: 2em;
+}
+
+.pic {
+    text-align: center;
+}
+
+.footer {
+    font-size: 12px;
+    color: #888888;
+}
