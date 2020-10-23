@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    /*
+    块级元素的特点
+    ① 独占一行；
+    ② 高，宽，外边距，内边距可控
+    ③ 宽度默认是容器（父级宽度）的 100%
+    ④ 是一个容器及盒子，里面可以放行内或块级元素
+    注意：文字内的元素不能使用块级元素，比如 p 标签内不能放 div，同理 h1~h6
+
+    */
+    div {
+      /*width: 200px;*/
+      height: 200px;
+      background-color: mediumvioletred;
+    }
+  </style>
+</head>
+<body>
+<div>比较霸道，独占一行</div>瑟瑟发抖
+<p>
+  <div>这样写会生成2个p标签，有问题</div>
+</p>
+</body>
+</html>
