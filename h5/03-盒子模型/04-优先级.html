@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    <!--
+    范围越小，权重越高
+    /*如果选择器相同，则执行层叠性；*/
+    /*选择器不同，则根据选择器权重执行。*/
+    /*继承或者* ：0000*/
+    /*元素选择器 ：0001 */
+    /*类/伪类选择器 ：0010 */
+    /*id选择器 ：0100 */
+    /*行内样式 ：1000 */
+    /*!important重要的 ：无穷大 */
+    -->
+
+    div {
+      color: red;
+    }
+    .test {
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+<div class="test">你笑起来真好看</div>
+</body>
+</html>
