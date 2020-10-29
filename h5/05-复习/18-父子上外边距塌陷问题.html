@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: #ff6700;
+            margin-top: 40px;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 100px;
+        }
+        /*
+            对于嵌套关系（父子关系）的块元素，父元素有上外边距，同时子元素也有上外边距，此时
+            父元素会塌陷较大的外边距值。
+        */
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>
