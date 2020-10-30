@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*① 子级绝对定位，不会占有位置，可以放到父盒子里面任何一个地方，不会影响其他盒子*/
+        /*② 父盒子需要加定位限制子盒子在父盒子内显示*/
+        /*③ 父盒子布局时，需要占有位置，因此父亲只能是相对定位*/
+        /*总结：因为父级需要占有位置，因此是相对定位，子级不需要占有位置，则是绝对定位*/
+        div {
+            position: relative;
+            width: 233px;
+            height: 155px;
+        }
+        .hot {
+            position: absolute;
+            top:10px;
+            right: -15px;
+        }
+        div
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./pic.png">
+        <img class="hot" src="./hot.png">
+    </div>
+</body>
+</html>

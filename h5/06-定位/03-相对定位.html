@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        对定位是元素在移动位置时，相对于它原来的位置（自恋型）
+        特点：
+        它是相对于自己原来的位置来移动
+        原来在标准流的位置继续占有，后面的盒子仍然以标准流的方式对待它（不脱标，继续保留原来的位置）
+        */
+        .box1 {
+            position: relative;
+            top:100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

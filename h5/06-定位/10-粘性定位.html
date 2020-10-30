@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        /*粘性定位可以被认为是相对定位和固定定位的特点*/
+        /*以浏览器的可视窗口为参考点移动元素（固定定位的特点）*/
+        /*粘性定位占有原先的位置（相对定位的特点）*/
+        /* 添加top,left,right,bottom其中一个才有效*/
+        .nav {
+            position: sticky;
+            top: 0px;
+            width: 400px;
+            height: 20px;
+            background-color: pink;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">导航栏</div>
+</body>
+</html>
