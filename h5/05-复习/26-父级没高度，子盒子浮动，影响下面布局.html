@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .clearfix {
+            /*IE6,7 专有*/
+            zoom: 1;
+        }
+        .father {
+            width: 800px;
+            background: gray;
+        }
+        .son {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+        .dama {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="father clearfix">
+        <div class="son"></div>
+    </div>
+    <div class="dama">
+
+    </div>
+</body>
+</html>
