@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .grandpa {
+            width: 800px;
+            height: 500px;
+            background-color: pink;
+        }
+        .father {
+            float: left;
+            width: 600px;
+            height: 100px;
+            background-color: #00a4ff;
+        }
+        .son h3 {
+            float: left;
+        }
+        .son h4 {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="grandpa">
+    <div class="father">
+        <div class="son">
+            <!--子级不继承父级的浮动属性-->
+            <h3>再见，lol</h3>
+            <h4>--aKing</h4>
+        </div>
+    </div>
+</div>
+</body>
+</html>

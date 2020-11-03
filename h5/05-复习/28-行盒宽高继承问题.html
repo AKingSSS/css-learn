@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            width: 100px;
+            height: 200px;
+            background-color: pink;
+        }
+        .son {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <!--行盒无法继承父级的宽高-->
+    <span class="son">123</span>
+</div>
+</body>
+</html>
