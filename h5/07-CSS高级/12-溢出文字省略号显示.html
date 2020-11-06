@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 150px;
+            height: 80px;
+            background-color: pink;
+            margin: 100px;
+            /*1.先强制一行内显示文本*/
+            white-space: nowrap;
+            /*2.超出部分隐藏*/
+            overflow: hidden;
+            /*3.文字用省略号代替超出部分 */
+            text-overflow: ellipsis;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    啥也不说，此处省略一万字。Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolor dolore, dolorem ea earum
+    eligendi eveniet ex facilis maxime modi officiis optio perferendis quaerat quis, quod reprehenderit sed tempora
+    tenetur!
+</div>
+</body>
+</html>

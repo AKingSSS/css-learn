@@ -1,0 +1,30 @@
+{
+  "id": "1564135",
+  "name": "Python-web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17758886",
+      "name": "卫衣",
+      "font_class": "weiyi",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "8629248",
+      "name": "搜索",
+      "font_class": "sousuo1",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "521533",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}
