@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .logo {
+            position: relative;
+            width: 55px;
+            height: 55px;
+            background-color: #ff6700;
+            overflow: hidden;
+        }
+
+        .logo::before {
+            position: absolute;
+            left: 0;
+            top:0;
+            /*一定要有这个属性*/
+            content: "";
+            width: 49px;
+            height: 49px;
+            background: url("./mi-home.png");
+            margin-left: -50px;
+            transition: all .2s;
+        }
+
+        .logo::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*一定要有这个属性*/
+            content: "";
+            width: 49px;
+            height: 49px;
+            background: url("./mi-logo.png");
+            transition: all .2s;
+        }
+        .logo:hover::before {
+            margin-left: 0px;
+        }
+        .logo:hover::after {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="logo"></div>
+</body>
+</html>

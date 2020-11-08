@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        nth-child(n)
+        1.n 可以是数字，关键字，公式
+        2.n如果是数字，就是选择第n个元素，里面数字从1开始
+        3.n可以使关键字，even 是偶数， odd是奇数
+        4.n可以是公式，从 0 开始
+        */
+        ul li:nth-child(even) {
+            background-color: pink;
+        }
+        ul li:nth-child(odd) {
+            background-color: gray;
+        }
+
+        /*这里必须是n，不能是其他字母*/
+        /*从0开始，每次加1，选择了所有的孩子*/
+        ol li:nth-child(n) {
+            background-color: #9bceea;
+        }
+        /*2n 偶数*/
+        /*2n+1 奇数*/
+        /*5n 5,10,15*/
+        /*n+5  从第 5 开始（包含第5个）到最后*/
+        /*-n+5 前 5 个（包含第5个）*/
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>我是第1个孩子</li>
+    <li>我是第2个孩子</li>
+    <li>我是第3个孩子</li>
+    <li>我是第4个孩子</li>
+    <li>我是第5个孩子</li>
+    <li>我是第6个孩子</li>
+    <li>我是第7个孩子</li>
+    <li>我是第8个孩子</li>
+</ul>
+<ol>
+    <li>我是第1个孩子</li>
+    <li>我是第2个孩子</li>
+    <li>我是第3个孩子</li>
+    <li>我是第4个孩子</li>
+    <li>我是第5个孩子</li>
+    <li>我是第6个孩子</li>
+    <li>我是第7个孩子</li>
+    <li>我是第8个孩子</li>
+</>
+</body>
+</html>

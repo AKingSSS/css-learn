@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        ::before 在元素内部的前面插入内容
+        ::after 在元素内部的后面插入内容
+        简化代码结构
+        before和after必须有content属性
+        和元素选择器的权重一样，都是1
+        */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        div::before {
+            /*默认行内元素*/
+            content: 'Py thon大星';
+        }
+        div::after {
+            content: '帅哥';
+        }
+    </style>
+</head>
+<body>
+    <div>是</div>
+</body>
+</html>

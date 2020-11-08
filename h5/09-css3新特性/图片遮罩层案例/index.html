@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .tudou {
+            position: relative;
+            width: 520px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .tudou::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 520px;
+            height: 300px;
+            background-color: rgba(0,0,0,.5);
+            /*隐藏遮罩层*/
+            display: none;
+        }
+        .tudou img {
+            width: 100%;
+            height: 100%;
+        }
+        .tudou:hover::after {
+            /*显示*/
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tudou">
+        <div class="shadow"></div>
+        <img src="bg.jpg" alt="">
+    </div>
+</body>
+</html>

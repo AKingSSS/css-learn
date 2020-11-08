@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /*transition： 变化的属性 花费时间 运动曲线 何时开始*/
+            /*transition: width .5s ease 1s;*/
+            /*如果要写多个属性，用逗号隔开*/
+            /*transition: width .5s, height .5s;*/
+            /*如果想要属性多做变化，用all*/
+            /*谁做过渡给谁加*/
+            transition: all .5s;
+        }
+        div:hover {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
