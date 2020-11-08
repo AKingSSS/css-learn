@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid orange;
+            /*过渡写到本身上，谁做动画给谁加*/
+            transition: all, .3s;
+        }
+        img:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+<img src="./headpic.jpeg" alt="">
+</body>
+</html>

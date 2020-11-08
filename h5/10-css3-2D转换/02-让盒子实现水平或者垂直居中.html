@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /*这里的50%是自身width的一半*/
+            transform: translate(50%);
+        }
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 40px;
+            background-color: palevioletred;
+            transform: translate(-50%, -50%);
+        }
+
+        span {
+            /*translate对于行内元素无效*/
+            transform: translate(100px,50px);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p></p>
+</div>
+<span>123</span>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            transition: all .3s;
+        }
+        div:hover {
+            /*同时有位移和其他属性时，要把位移放到最前面*/
+            transform: translate(120px,120px) rotate(180deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
