@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*required: 必填 */
+        /*placeholder: 表单提示内容，默认值 */
+        /*autocomplete: 显示历时输入记录 */
+        /*multiple: 可以多选文件提交 */
+        input::placeholder {
+            color: #9bceea;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="search" name="ser" required="required"
+               placeholder="笔记本" autofocus="autofocus"
+        autocomplete="off">
+        <input type="file" multiple="multiple">
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
