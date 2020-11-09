@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 0;
+            height: 30px;
+            /*10个字刚好200px*/
+            font-size: 20px;
+            /*让我们文字强制一行显示*/
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: pink;
+            /*step 就是分几步来完成我们的动画*/
+            animation: w 4s steps(10) forwards;
+        }
+        @keyframes w {
+            from {
+                width: 0;
+            }
+            to {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>这里面就刚刚好十个字</div>
+</body>
+</html>
