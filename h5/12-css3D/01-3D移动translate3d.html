@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            /*
+            透视写在被观察元素的父盒子上面
+            透视越小，离屏幕越近，物体越大
+            */
+            perspective: 500px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /*1.translateY 会把translateX的样式覆盖*/
+            /*transform: translateX(100px);
+            transform: translateY(100px);*/
+
+            /*2.translateZ 沿着z轴移动*/
+            /*2.translateZ 后面的单位我们一般跟px*/
+            /*2.translateZ(100px) 向外移动100px(向我们眼睛来移动)*/
+            /*transform: translateX(100px) translateY(100px) translateZ(100px);*/
+
+            /*3.3D移动简写的方法*/
+            /*transform: translate3d(x,y,z);*/
+            /*x,y,z 如果没有，就写0*/
+            transform: translate3d(400px, 100px, 100px);
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

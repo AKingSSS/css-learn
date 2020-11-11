@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+        img {
+            display: block;
+            /*行内块元素使用 margin:0 auto 无效，对父级使用 text-align：center 即可*/
+            /*auto 是基于总宽度 - 已知固定宽度获得取值的，inline-block
+            元素水平方向的 7 大属性没有总宽度的限制，所以 margin 设置为 auto 时，
+            不知道如何取值，所以默认为 0，于是便没有起到我们想要的居中的效果。*/
+            /*注意：img 直接设置margin居中，会失效*/
+            margin: 100px auto;
+            /*谁用过渡写在谁身上*/
+            transition: all 1s;
+
+        }
+        img:hover {
+            /*左手准则*/
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="./cat.jpg" alt="">
+</body>
+</html>

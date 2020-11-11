@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            margin: 100px;
+        }
+        ul li {
+            float: left;
+            margin: 0 5px;
+            width: 120px;
+            height: 35px;
+            list-style: none;
+            perspective: 500px;
+        }
+        .box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all .4s;
+        }
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+        .front,
+        .bottom {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+        }
+        .front {
+            background-color: pink;
+            z-index: 1;
+            transform: translateZ(18px);
+        }
+        .bottom {
+            background-color: peru;
+            transform: translateY(18px) rotateX(-80deg) ;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front">Python大星</div>
+                <div class="bottom">大浪青沙</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front"></div>
+                <div class="bottom"></div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front"></div>
+                <div class="bottom"></div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front"></div>
+                <div class="bottom"></div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+        img {
+            display: block;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        img:hover {
+            transform: rotateZ(180deg);
+            /*
+            transform: rotate3d(x,y,z,deg);
+            沿着自定义轴旋转deg角度
+            */
+            /*沿着对角线旋转*/
+            transform: rotate3d(1,1,0,45deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="./cat.jpg" alt="">
+</body>
+</html>
