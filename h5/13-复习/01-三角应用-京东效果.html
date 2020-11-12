@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+
+        .box::after {
+            /*
+            小三角使用定位：绝对定位不占有原有位置
+            子绝父相
+            伪元素一定一定一定不能忘了 content
+            */
+            content: "";
+            position: absolute;
+            left: 130px;
+            top: -20px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

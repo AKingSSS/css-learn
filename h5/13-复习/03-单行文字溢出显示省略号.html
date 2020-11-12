@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box span {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: orchid;
+            margin: 100px auto;
+            /*1 强制一行内显示*/
+            white-space: nowrap;
+            /*2 超出溢出*/
+            overflow: hidden;
+            /*3 文字用省略号代替超出部分*/
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>
+            此处省略一万字,Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, amet dolor error facere ipsa magni molestiae natus quae. Aliquid architecto dicta dolores enim est impedit ipsam nemo quo recusandae similique?
+        </span>
+    </div>
+</body>
+</html>

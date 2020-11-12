@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .box span {
+            /**
+            <span> 是行内元素，span 只有 margin-left 和 margin-right 才有效果。
+            要想 margin-top 生效就要把转给块 级元素才行。
+             */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>123</span>
+        <span>456</span>
+        <span>789</span>
+    </div>
+</body>
+</html>
