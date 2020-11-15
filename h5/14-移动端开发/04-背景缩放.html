@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid red;
+            background: url("./pic.jpeg") no-repeat;
+            /*background-size: 图宽 图高;*/
+            /*background-size: 1000px 600px;*/
+            /*1.只写一个参数，宽度为1000px,高度等比例缩放*/
+            /*background-size: 1000px;*/
+            /*2.里面的单位可以跟百分比，相对于父盒子来说*/
+            /*background-size: 50%;*/
+            /*3. cover 完全覆盖，可能部分显示不全*/
+            /*background-size: cover;*/
+            /*4.contain,宽度或者高度到位，不再缩放*/
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
