@@ -1,0 +1,306 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*盒子模型*/
+div {
+    box-sizing: border-box;
+}
+
+/*搜索模块：宽度缩放+固定宽度*/
+.search-index {
+    /*flex布局*/
+    display: flex;
+    /*固定定位跟父级没有关系，它以屏幕为准*/
+    position: fixed;
+    top: 0;
+    /*盒子居中对齐*/
+    left: 50%;
+    /*盒子宽度的一半*/
+    transform: translateX(-50%);
+    /*兼容*/
+    -wekit-transform: translateX(-50%);
+    /*固定的盒子应该有宽度*/
+    width: 100%;
+    height: 44px;
+    min-width: 320px;
+    max-width: 540px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.search {
+    position: relative;
+    height: 26px;
+    /*由于设置了box-sizing: border-box;行高为26-边框*2*/
+    line-height: 24px;
+    border: 1px solid #cccccc;
+    flex: 1;
+    margin: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    padding-left: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: url("../images/sprite.png") no-repeat -59px -279px;
+    /*精灵图缩放 二倍图*/
+    background-size: 104px auto;
+    margin: 5px;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    /*background-color: purple;*/
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url("../images/sprite.png") no-repeat -59px -194px;
+    /*精灵图缩放 二倍图*/
+    background-size: 104px auto;
+    margin: 4px auto -4px;
+}
+
+/*焦点图*/
+.focus {
+    padding-top: 44px;
+}
+
+.focus img {
+    width: 100%;
+}
+
+/*局部导航栏*/
+.local-nav {
+    display: flex;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 3px 4px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    /*主轴为y轴*/
+    flex-direction: column;
+    /*单行：把侧轴设置为居中对齐*/
+    align-items: center;
+}
+
+.local-nav li [class^="local-nav-icon"] {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    background-color: pink;
+    background: url("../images/localnav_bg.png") no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -32px;
+}
+
+.local-nav li .local-nav-icon-icon3 {
+    background-position: 0 -64px;
+}
+
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -96px;
+}
+
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -128px;
+}
+
+/*主导航栏*/
+nav {
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 4px 3px;
+}
+
+.nav-common {
+    display: flex;
+    height: 88px;
+    background-color: pink;
+}
+
+.nav-common:nth-child(1) {
+    /*颜色渐变*/
+    background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+
+.nav-common:nth-child(2) {
+    margin: 3px 0;
+    background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+}
+
+.nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+
+.nav-items {
+    /*不冲突*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-items a {
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    color: #ffffff;
+    font-size: 14px;
+    /*文字阴影*/
+    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
+.nav-items a:nth-child(1) {
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-items:nth-child(1) a {
+    border: 0;
+    background: url("../images/hotel.png") no-repeat bottom center;
+    background-size: 121px auto;
+}
+
+.nav-items:nth-child(-n+2) {
+    border-right: 1px solid #ffffff;
+}
+
+/*侧导航栏*/
+.subnav-entry {
+    display: flex;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 0 4px;
+    /*换行*/
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.subnav-entry li {
+    /*里面的盒子可以写百分比*/
+    flex: 20%;
+}
+
+.subnav-entry a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subnav-entry-icon {
+    width: 28px;
+    height: 28px;
+    background-color: pink;
+    margin-top: 4px;
+    background: url("../images/subnav-bg.png") no-repeat;
+    background-size: 28px auto;
+}
+
+.sales-box {
+    border-top: 1px solid #cccccc;
+    background-color: #ffffff;
+    margin: 4px;
+}
+
+.sales-hd {
+    position: relative;
+}
+
+.sales-hd h2 {
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.sales-hd h2::after {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    content: "";
+    width: 79px;
+    height: 15px;
+    background: url("../images/hot.png") no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+
+.more {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    background: -webkit-linear-gradient(left, #ff506c, #ff6bc6);
+    border-radius: 15px;
+    padding: 3px 20px 3px 10px;
+    color: #ffffff;
+}
+
+.more::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.row {
+    display: flex;
+
+}
+
+.row a {
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+.row a:nth-child(1) {
+    border-right: 1px solid #eee;
+}
+.row a img {
+    width: 100%;
+}

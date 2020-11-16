@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*主轴：x轴水平向右*/
+        /*侧轴：y轴垂直向下*/
+        div {
+            display: flex;
+            width: 50%;
+            height: 300px;
+            background-color: pink;
+            /*默认主轴是x轴 行row*/
+            /*我们的元素是跟着主轴排列*/
+            flex-direction: row;
+            /*flex 布局默认子元素不换行，如果装不下，会缩小子元素的宽度，放到父元素里面*/
+            /*flex-wrap: nowrap;*/
+            flex-wrap: wrap;
+
+        }
+        div span {
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+</div>
+</body>
+</html>
