@@ -1,0 +1,13 @@
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  //1.less嵌套，子元素的样式直接写到父元素里面
+  a {
+    color: red;
+    //&不加空格（伪类、交集、伪元素）
+    &:hover {
+      color: blue;
+    }
+  }
+}
