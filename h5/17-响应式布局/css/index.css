@@ -1,0 +1,48 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    text-decoration: none;
+}
+/*修改container的宽度为1280px,根据设计稿*/
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+/*header*/
+header {
+    padding-left: 0!important;
+}
+.logo {
+    background-color: #429ad9;
+}
+.logo img {
+    width: 100%;
+}
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #cccccc;
+}
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+.nav a:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
