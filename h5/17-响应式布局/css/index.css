@@ -10,6 +10,13 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+body {
+    background-color: #f5f5f5;
+}
+.container {
+    background-color: #fff;
+}
 /*修改container的宽度为1280px,根据设计稿*/
 @media screen and (min-width: 1280px) {
     .container {
@@ -25,8 +32,21 @@ header {
     background-color: #429ad9;
 }
 .logo img {
-    width: 100%;
+    /*width: 100%;*/
+    /*logo图片不需要缩放*/
+    max-width: 100%;
+    margin: 0 auto;
 }
+.logo span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+    /*如果我们进入超小屏幕 logo 里面的图片就隐藏起来*/
+
 .nav {
     background-color: #eee;
     border-bottom: 1px solid #cccccc;
@@ -45,4 +65,102 @@ header {
 .nav a::before {
     vertical-align: middle;
     padding-right: 5px;
+}
+/*当我们进入超小屏幕，导航栏浮动*/
+@media screen and (max-width: 991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+    article {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav li a {
+        font-size: 14px;
+        padding-left: 0;
+    }
+    .news ul li:nth-child(1) {
+        width: 100% !important;
+    }
+    .news li {
+        width: 50% !important;
+    }
+    .publish h3 {
+        font-size: 14px;
+    }
+}
+.news li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.news li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+    /*background-color: pink;*/
+}
+.news li:nth-child(1) p {
+    line-height: 41px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.news li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*background-color: purple;*/
+}
+.news li a img {
+    width: 100%;
+    height: 100%;
+}
+.news li a p {
+    position: absolute;
+    width: 100%;
+    height: 41px;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    font-size: 12px;
+    color: #ffffff;
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+
+.publish {
+    border-top: 1px solid #cccccc;
+}
+.publish .row {
+    border-bottom: 1px solid #cccccc;
+}
+.pic {
+    margin-top: 10px;
+}
+
+.pic img {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+.hot {
+    display: block;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+    border: 1px solid #cccccc;
+}
+.hot span {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.hot p {
+    font-size: 12px;
 }
